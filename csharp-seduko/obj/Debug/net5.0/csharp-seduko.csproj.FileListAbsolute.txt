@@ -1,0 +1,16 @@
+C:\Users\Srwig\Source\Repos\csharp-seduko\csharp-seduko\bin\Debug\net5.0\csharp-seduko.exe
+C:\Users\Srwig\Source\Repos\csharp-seduko\csharp-seduko\bin\Debug\net5.0\csharp-seduko.deps.json
+C:\Users\Srwig\Source\Repos\csharp-seduko\csharp-seduko\bin\Debug\net5.0\csharp-seduko.runtimeconfig.json
+C:\Users\Srwig\Source\Repos\csharp-seduko\csharp-seduko\bin\Debug\net5.0\csharp-seduko.runtimeconfig.dev.json
+C:\Users\Srwig\Source\Repos\csharp-seduko\csharp-seduko\bin\Debug\net5.0\csharp-seduko.dll
+C:\Users\Srwig\Source\Repos\csharp-seduko\csharp-seduko\bin\Debug\net5.0\ref\csharp-seduko.dll
+C:\Users\Srwig\Source\Repos\csharp-seduko\csharp-seduko\bin\Debug\net5.0\csharp-seduko.pdb
+C:\Users\Srwig\Source\Repos\csharp-seduko\csharp-seduko\obj\Debug\net5.0\csharp-seduko.csprojAssemblyReference.cache
+C:\Users\Srwig\Source\Repos\csharp-seduko\csharp-seduko\obj\Debug\net5.0\csharp-seduko.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Srwig\Source\Repos\csharp-seduko\csharp-seduko\obj\Debug\net5.0\csharp-seduko.AssemblyInfoInputs.cache
+C:\Users\Srwig\Source\Repos\csharp-seduko\csharp-seduko\obj\Debug\net5.0\csharp-seduko.AssemblyInfo.cs
+C:\Users\Srwig\Source\Repos\csharp-seduko\csharp-seduko\obj\Debug\net5.0\csharp-seduko.csproj.CoreCompileInputs.cache
+C:\Users\Srwig\Source\Repos\csharp-seduko\csharp-seduko\obj\Debug\net5.0\csharp-seduko.dll
+C:\Users\Srwig\Source\Repos\csharp-seduko\csharp-seduko\obj\Debug\net5.0\ref\csharp-seduko.dll
+C:\Users\Srwig\Source\Repos\csharp-seduko\csharp-seduko\obj\Debug\net5.0\csharp-seduko.pdb
+C:\Users\Srwig\Source\Repos\csharp-seduko\csharp-seduko\obj\Debug\net5.0\csharp-seduko.genruntimeconfig.cache
