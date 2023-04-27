@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp-seduko", "csharp-seduko\csharp-seduko.csproj", "{98C2B555-CC6E-42CA-A972-78D101948329}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98C2B555-CC6E-42CA-A972-78D101948329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98C2B555-CC6E-42CA-A972-78D101948329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98C2B555-CC6E-42CA-A972-78D101948329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98C2B555-CC6E-42CA-A972-78D101948329}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28F05DD5-CDC1-4091-87AC-625EAA749052}
+	EndGlobalSection
+EndGlobal
