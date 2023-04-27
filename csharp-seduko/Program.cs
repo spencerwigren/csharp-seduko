@@ -6,7 +6,7 @@ namespace csharp_seduko
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello World!\nthis is a test");
         }
     }
 }
