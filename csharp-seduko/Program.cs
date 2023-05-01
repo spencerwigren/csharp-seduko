@@ -23,7 +23,7 @@ namespace csharp_seduko
         {
             NewMethod("Test Name");
 
-   
+            
 
             Console.WriteLine("Hello World!\nthis is a test");
         }
