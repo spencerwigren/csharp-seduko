@@ -1,9 +1,9 @@
 ﻿using System;
 
-namespace csharp_seduko
+public class Class1
 {
-    class Program
-    {
+	public Class1()
+	{
         double NewNumber = 1.345;
 
         static void AddNumbers(double Number1)
@@ -19,13 +19,13 @@ namespace csharp_seduko
         {
             Console.WriteLine(fname);
         }
+
         static void Main()
         {
             NewMethod("Test Name");
 
-   
-
             Console.WriteLine("Hello World!\nthis is a test");
         }
+
     }
 }
