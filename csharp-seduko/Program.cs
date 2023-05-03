@@ -1,9 +1,16 @@
 ﻿using System;
+using System.IO;
 
 namespace csharp_seduko
 {
     class Program
     {
+        static void ReadFile()
+        {
+            // reads txt file
+            
+        }
+
         static string UserInput()
         {
             // get user input
