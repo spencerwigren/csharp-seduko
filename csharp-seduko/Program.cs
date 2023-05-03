@@ -4,33 +4,45 @@ namespace csharp_seduko
 {
     class Program
     {
-        static string ShowOptions()
+        static string UserInput()
         {
-            Console.WriteLine("Options: \nShow Options again - S");
-            Console.WriteLine("End Game - E");
-            string UserInput = Console.ReadLine();
-            return UserInput;
+            // get user input
+            string UserOption = Console.ReadLine();
+
+            return UserOption;
         }
 
-        static void ShowRunner(string UserInput)
+        static void ShowOptions()
+        {
+            Console.WriteLine("Options: \nShow Options again - S");
+            Console.WriteLine("End Game - E\n");
+        }
+
+        static void ShowRunner(bool RunGame)
         {
             // this is control options for playing the game
-
-            switch (UserInput.ToUpper())
+            while (RunGame == true)
             {
-                case "S":
-                    Console.WriteLine("Show Instrutsion again");
-                    ShowOptions();
-                    break;
-                case "E":
-                    Console.WriteLine("End Game");
-                    break;
+                switch (UserInput().ToUpper())
+                {
+                    case "S":
+                        Console.WriteLine("Show Instrutsion again");
+                        ShowOptions();
+                        break;
+                    case "E":
+                        Console.WriteLine("End Game");
+                        RunGame = false;
+                        break;
+                }
             }
         }
 
         static void Main()
         {
-            ShowRunner(ShowOptions());
+            bool RunGame = true;
+
+            ShowOptions();
+            ShowRunner(RunGame);
 
         }
     }
