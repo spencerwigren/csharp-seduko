@@ -11,12 +11,12 @@ namespace csharp_seduko
             string UserInput = Console.ReadLine();
             return UserInput;
         }
-        static void Main()
+
+        static void ShowRunner(string UserInput)
         {
-            string UserInput = ShowOptions();
+            // this is control options for playing the game
 
-
-           switch (UserInput)
+            switch (UserInput.ToUpper())
             {
                 case "S":
                     Console.WriteLine("Show Instrutsion again");
@@ -26,6 +26,12 @@ namespace csharp_seduko
                     Console.WriteLine("End Game");
                     break;
             }
+        }
+
+        static void Main()
+        {
+            ShowRunner(ShowOptions());
+
         }
     }
 }
