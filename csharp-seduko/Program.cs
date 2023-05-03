@@ -7,8 +7,18 @@ namespace csharp_seduko
     {
         static void ReadFile()
         {
+            //
             // reads txt file
-            
+            if (File.Exists(@"C:\\SolutionsFile.txt"))
+                // Will need to update path
+            {
+                Console.WriteLine("File exist");
+            }
+            else
+            {
+                Console.WriteLine("File Does not exist!");
+                ShowOptions();
+            }
         }
 
         static string UserInput()
@@ -22,6 +32,7 @@ namespace csharp_seduko
         static void ShowOptions()
         {
             Console.WriteLine("Options: \nShow Options again - S");
+            Console.WriteLine("Load File - F");
             Console.WriteLine("End Game - E\n");
         }
 
@@ -35,6 +46,10 @@ namespace csharp_seduko
                     case "S":
                         Console.WriteLine("Show Instrutsion again");
                         ShowOptions();
+                        break;
+                    case "F":
+                        Console.WriteLine("Loading File");
+                        ReadFile();
                         break;
                     case "E":
                         Console.WriteLine("End Game");
