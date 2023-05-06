@@ -5,7 +5,7 @@ Desinging a simply Sudoku Game in C#
 My Purpose in writing this is to learn C#
 
 
-[Software Demo Video]([https://www.youtube.com/watch?v=hfqbDTf5Ma8])
+[Software Demo Video](https://www.youtube.com/watch?v=hfqbDTf5Ma8)
 
 # Development Environment
 
