@@ -7,12 +7,16 @@ namespace csharp_seduko
     {
         static void ReadFile()
         {
-            //
+            // method to read a file
+            // could not get "SolutionsFile.txt" to load in current directory
+            // will come back to find a solutions
+   
             // reads txt file
-            if (File.Exists(@"C:\\SolutionsFile.txt"))
+            if (File.Exists("SolutionsFile.txt"))
                 // Will need to update path
             {
                 Console.WriteLine("File exist");
+                ShowOptions();
             }
             else
             {
