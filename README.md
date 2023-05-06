@@ -1,8 +1,8 @@
 # Overview
 
-{Provide a description of the software that you wrote to demonstrate the C# language.}
+Desinging a simply Sudoku Game in C#
 
-{Describe your purpose for writing this software.}
+My Purpose in writing this is to learn c#
 
 {Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
 
@@ -10,21 +10,22 @@
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+I'm using:
+- Visual Studio
+- .net
 
-{Describe the programming language that you used and any libraries.}
+Langualge:
+- C#
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
-- [Web Site Name](http://url.link.goes.here)
+- [w3schools](https://www.w3schools.com/cs/index.php)
 - [Web Site Name](http://url.link.goes.here)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
+Things to fix and imporve
 
-- Item 1
-- Item 2
-- Item 3
+- Logic for user input of editing a cell
+- checking to see if the cell and be edited
+- Putting normal sudoku rules into the logic
