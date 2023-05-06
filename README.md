@@ -20,7 +20,6 @@ Languages:
 # Useful Websites
 
 - [w3schools](https://www.w3schools.com/cs/index.php)
-- [Web Site Name](http://url.link.goes.here)
 
 # Future Work
 
