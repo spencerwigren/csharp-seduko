@@ -10,20 +10,58 @@ namespace csharp_seduko
         {
             /* method to read a file
             could not get "SolutionsFile.txt" to load in current directory
-            will come back to find a solutions */
+            will come back to find a solutions 
+            * streamreader
+            */
    
             // reads txt file
             if (File.Exists("SolutionsFile.txt"))
                 // Will need to update path
             {
-                Console.WriteLine("File exist");
+                Console.WriteLine("File exist\n");
                 ShowOptions();
             }
             else
             {
-                Console.WriteLine("File Does not exist!");
+                Console.WriteLine("File Does not exist!\n");
                 ShowOptions();
             }
+        }
+
+        static Tuple<string, string> GetCellEdit()
+        {
+            /* This method will get the user input
+             * As a string for the cell user is editing
+             * And a string value for the new value of the cell
+             * Which will be returned as a tuple
+             */
+            Console.Write("Which cell would you like to edit\n" +
+                "Example: A1\n" +
+                "> ");
+            string CellCords = UserInput();
+
+            Console.Write("Editing Cell: " +
+                CellCords + "\n");
+
+            Console.Write("New Value > ");
+            string NewCellValue = Console.ReadLine();
+
+            Console.WriteLine("Cell Editing: " + CellCords +
+                "\nNew Value: " + Convert.ToInt32(NewCellValue) + "\n");
+
+            var CellValues = Tuple.Create(CellCords, NewCellValue);
+
+            return CellValues;
+
+
+        }
+        static void EditBoard(int[,] Board)
+        {
+            /* This method will edit the board with a user input */
+            var CellValues = GetCellEdit();
+            Console.WriteLine(CellValues);
+
+
         }
 
         static void DisplayBoard(int[,] Board)
@@ -89,8 +127,9 @@ namespace csharp_seduko
         {
             Console.WriteLine("Options: \nShow Options again - S");
             Console.WriteLine("Display Baord - D");
+            Console.WriteLine("Edit the Board - E");
             Console.WriteLine("Load File - F");
-            Console.WriteLine("End Game - E\n");
+            Console.WriteLine("End Game - G\n");
         }
 
         static void ShowRunner(bool RunGame, int[,] Board)
@@ -109,11 +148,16 @@ namespace csharp_seduko
                         DisplayBoard(Board);
                         ShowOptions();
                         break;
+                    case "E":
+                        Console.WriteLine("Editing a cell - ");
+                        EditBoard(Board);
+                        ShowOptions();
+                        break;
                     case "F":
                         Console.WriteLine("Loading File");
                         ReadFile();
                         break;
-                    case "E":
+                    case "G":
                         Console.WriteLine("End Game");
                         RunGame = false;
                         break;
