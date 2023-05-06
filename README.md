@@ -14,7 +14,7 @@ I'm using:
 - Visual Studio
 - .net
 
-Langualge:
+Languages:
 - C#
 
 # Useful Websites
