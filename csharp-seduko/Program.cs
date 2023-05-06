@@ -28,39 +28,63 @@ namespace csharp_seduko
             }
         }
 
-        static Tuple<string, string> GetCellEdit()
+        static Tuple<string, string, string> GetCellEdit()
         {
             /* This method will get the user input
              * As a string for the cell user is editing
              * And a string value for the new value of the cell
              * Which will be returned as a tuple
+             * 
+             * Will need to write logic to check for expections
+             * 
              */
-            Console.Write("Which cell would you like to edit\n" +
-                "Example: A1\n" +
-                "> ");
-            string CellCords = UserInput();
+
+            /* if col <= 9 Board[Col, Row] == NewCelValue
+             *         contiune
+             * else 
+             * get new col and new row
+             */
+
+            Console.Write("Which Cololum would you like to edit\n");
+            string Col = UserInput();
+
+            Console.Write("Which Row would you like to edit\n");
+            string Row = UserInput();
 
             Console.Write("Editing Cell: " +
-                CellCords + "\n");
+                Row + " " + Col +  "\n");
 
             Console.Write("New Value > ");
             string NewCellValue = Console.ReadLine();
 
-            Console.WriteLine("Cell Editing: " + CellCords +
+            Console.WriteLine("Cell Editing: " + Row + " " + Col +
                 "\nNew Value: " + Convert.ToInt32(NewCellValue) + "\n");
 
-            var CellValues = Tuple.Create(CellCords, NewCellValue);
+            var CellValues = Tuple.Create(Col, Row, NewCellValue);
 
             return CellValues;
 
 
         }
-        static void EditBoard(int[,] Board)
+        
+        static int[,] EditBoard(int[,] Board)
         {
-            /* This method will edit the board with a user input */
-            var CellValues = GetCellEdit();
-            Console.WriteLine(CellValues);
+            /* This method will edit the board with a user input From GetCellEdit
+             * Once methds geets values will edit the Board
+             * Then will dispaly the board onced it is edited
+             */
+            Tuple<string, string, string> CellValues = GetCellEdit();
+            //Console.WriteLine(CellValues);
+            int Row = Convert.ToInt32(CellValues.Item1) - 1;
+            int Col = Convert.ToInt32(CellValues.Item2) - 1;
+            int NewCellValue = Convert.ToInt32(CellValues.Item3);
 
+
+            Board[Row, Col] = NewCellValue;
+
+            //DisplayBoard(Board);
+
+            return Board;
 
         }
 
@@ -69,12 +93,12 @@ namespace csharp_seduko
             /*
              Will display the board, when player calls for it
              */
-            
+
             int count = 1;
             int SideNumber = 2;
             string BoardSectionDivisor = "  -+-+-+-+-+-+-+-+-";
 
-            Console.Write("  A B C D E F G H I\n1 ");
+            Console.Write("  1 2 3 4 5 6 7 8 9\n1 ");
 
             for (int i = 0; i < Board.GetLength(0); i++)
             {
@@ -118,6 +142,7 @@ namespace csharp_seduko
         static string UserInput()
         {
             // get user input
+            Console.Write("> ");
             string UserOption = Console.ReadLine();
 
             return UserOption;
@@ -149,8 +174,9 @@ namespace csharp_seduko
                         ShowOptions();
                         break;
                     case "E":
-                        Console.WriteLine("Editing a cell - ");
-                        EditBoard(Board);
+                        Console.WriteLine("Editing a cell:");
+                        int[,] NewBoard = EditBoard(Board);
+                        DisplayBoard(NewBoard);
                         ShowOptions();
                         break;
                     case "F":
@@ -182,6 +208,7 @@ namespace csharp_seduko
             bool RunGame = true;
 
             ShowOptions();
+            DisplayBoard(Board);
             ShowRunner(RunGame, Board);
 
         }
